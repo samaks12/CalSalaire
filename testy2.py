@@ -1,9 +1,9 @@
 import unittest
-from testSalaire import *
+from CalculSalaire import *
 
 class MyFirstTests(unittest.TestCase):
 
-    def tes1(self):
+    def test1(self):
         self.assertEqual(CalculerSalaire('Architecte',4), '4000 euros')
 
 
@@ -13,3 +13,7 @@ class MyFirstTests(unittest.TestCase):
 
     def test3(self):
         self.assertEqual(CalculerSalaire('consultant', 5), '5000 euros')
+
+
+if __name__ == '__main__':
+    unittest.main()
